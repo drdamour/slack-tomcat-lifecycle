@@ -109,7 +109,7 @@ public class LifecycleNotifier implements LifecycleListener {
             this.sendMessage(":rage: App Context " + context.getName() + " on " + this.getServerName() + " FAILED");
         }
 
-        if(LifecycleState.DESTROYED.equals(e.getLifecycle().getState())){
+        if(LifecycleState.DESTROYED.equals(e.getLifecycle().getState()){
             this.sendMessage("App Context " + context.getName() + " on " + this.getServerName() + " Removed");
         }
     }
